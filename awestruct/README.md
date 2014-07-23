@@ -9,7 +9,7 @@ This image provides full environemnt for developing sites with awestruct. The
 only thing you need to do is to mount the source of your website (or init a new
 one with the `awestruct -i` command) and start hacking.
 
-    docker run -it --rm -v /home/goldmann/git/goldmann.pl:/home/awestruct/goldmann.pl goldmann/awestruct
+    docker run -it --rm -v /home/goldmann/git/goldmann.pl:/home/awestruct/goldmann.pl -p 4242:4242 goldmann/awestruct
 
 ## SELinux
 
