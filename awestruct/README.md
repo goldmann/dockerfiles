@@ -17,4 +17,4 @@ If you run the container on a SELinux-enabled host (for example on Fedora) you
 need to change the SELinux label of the directory that contains the source code
 of your website to b able to modify it from inside of the container:
 
-    chcon -t svirt_sandbox_file_t /home/goldmann/git/goldmann.pl/
+    chcon -t svirt_sandbox_file_t -R /home/goldmann/git/goldmann.pl/
