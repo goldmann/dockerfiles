@@ -1,7 +1,6 @@
 FROM fedora:latest
-RUN yum -y update
-RUN yum -y install git bash-completion libxslt-devel libxml2-devel which patch libyaml-devel libffi-devel glibc-headers autoconf gcc-c++ glibc-devel patch readline-devel zlib-devel openssl-devel make bzip2 automake libtool bison
-RUN yum clean all
+RUN yum -y update && yum clean all
+RUN yum -y install git bash-completion libxslt-devel libxml2-devel which patch libyaml-devel libffi-devel glibc-headers autoconf gcc-c++ glibc-devel patch readline-devel zlib-devel openssl-devel make bzip2 automake libtool bison && yum clean all
 
 RUN useradd -m awestruct
 
